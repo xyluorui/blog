@@ -93,7 +93,6 @@ $ git config --globle core.editor vim
 $ git config --globle alias.co checkout
 ```
 
-### jfkjs
 {% endnote %}
 
 
