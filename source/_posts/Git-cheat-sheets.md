@@ -95,9 +95,75 @@ $ git config --globle alias.co checkout
 
 {% endnote %}
 
+{% note success %}
 
+## 忽略文件
+### 添加本项目的忽略文件
 
+```
+$ vim .gitignore
+```
 
+### 添加本项目的忽略文件并不把此文件纳入版本管理
+
+```
+$ vim .git/info/exclude
+```
+
+### 设置全局忽略文件
+
+```
+$ gti config --global core.excludesfile `/.gitignore
+```
+
+### 对已加入版本管理的文件不做更改检查
+
+```
+$ git update-index --n0-assume-unchanged<file>
+```
+
+{% endnote %}
+
+{% note info %}
+
+## 添加删除移动文件
+### 添加所有文件到缓存区，包括未追踪文件
+
+```
+$ git add -A
+```
+
+### 更新暂存区文件
+
+```
+git add -u
+```
+
+### 交互式添加文件到暂存区
+
+``` 
+git add -p
+```
+
+### 工作区与暂存区删除文件
+
+```
+git rm <file>
+```
+
+### 仅暂存区删除文件
+
+``` 
+$ git rm --cached <file>
+```
+
+### 重命名暂存区文件
+
+```
+$ git mv <file> <filel>
+```
+
+{% endnote %}
 
 {% note default %}
 
