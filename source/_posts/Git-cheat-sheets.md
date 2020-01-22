@@ -167,11 +167,9 @@ $ git mv <file> <filel>
 {% endnote %}
 
 
-{% note info %}
+{% note default %}
 
 {% endnote %}
-
-
 
 {% note default %}
 
