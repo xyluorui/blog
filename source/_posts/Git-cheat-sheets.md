@@ -11,6 +11,7 @@ tags: Git
 
 {% note default %}
 ## 初始化仓库
+
 ### 初始化仓库
 
 ```
@@ -165,9 +166,12 @@ $ git mv <file> <filel>
 
 {% endnote %}
 
+
 {% note info %}
 
 {% endnote %}
+
+
 
 {% note default %}
 
