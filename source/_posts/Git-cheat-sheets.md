@@ -137,19 +137,19 @@ $ git add -A
 ### 更新暂存区文件
 
 ```
-git add -u
+$ git add -u
 ```
 
 ### 交互式添加文件到暂存区
 
 ``` 
-git add -p
+$ git add -p
 ```
 
 ### 工作区与暂存区删除文件
 
 ```
-git rm <file>
+$ git rm <file>
 ```
 
 ### 仅暂存区删除文件
@@ -169,7 +169,137 @@ $ git mv <file> <filel>
 
 {% note info %}
 
+## 工作区状态
+### 查看工作区信息
+
+```
+$ git ststus
+```
+
+### 查看工作区信息并显示分支及追踪信息
+
+```
+$ git status -sb
+```
+
+### 查看忽略文件的信息
+
+```
+$ git status --ignored
+```
+
+### 列出忽略文件
+
+```
+$ git check-ignore *
+```
+
 {% endnote %}
+
+
+{% note info %}
+
+## 显示更改
+
+### 显示工作区与暂存区的不同
+
+```
+$ git diff
+```
+
+### 显暂存区与本地仓库的不同
+
+```
+$ git diff --cached
+```
+
+### 显示工作区、暂存区与本地仓库的不同
+
+```
+$ git diff HEAD
+```
+
+### 仅显示改变的文件
+
+```
+$ git diff --name-only
+```
+
+### 比较两次提交的差异
+
+```
+$ git diff <commit> <commit>
+```
+
+### 显示某次commit所做的更改
+
+```
+$ git show <commit>
+```
+
+{% endnote %}
+
+{% note info %}
+
+## 列出文件信息
+
+### 列出暂存区文件
+
+```
+$ git ls-files
+```
+
+### 列出忽略文件与未追踪文件
+
+```
+$ git ls-files -o
+```
+
+### 子目录中显示所在位置
+
+```
+$ git ls-files --full-name
+```
+
+{% endnote %}
+
+{% note info %}
+
+## 储藏与备份
+
+### 储藏(stash)工作区相对暂存区更改的文件
+
+```
+$ git stash
+```
+
+### 储藏文件并添加描述信息
+
+```
+$ git stash save <message>
+```
+
+### 恢复最后一次储藏的文件
+
+```
+$ git stash apply
+```
+
+### 恢复最后一次储藏的文件并删除此次存储记录
+
+```
+$ git stash pop
+```
+
+### 查看储藏列表
+
+```
+$ git stash list
+``` 
+
+{% endnote %}
+
+
 
 {% note default %}
 
