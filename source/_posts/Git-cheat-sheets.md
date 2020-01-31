@@ -295,9 +295,136 @@ $ git stash pop
 
 ```
 $ git stash list
-``` 
+```
 
 {% endnote %}
+
+
+{% note info %}
+
+## 恢复工作区
+
+### 重置工作区某文件
+
+```
+$ git checkout --<file>
+```
+
+### 重置工作区
+
+```
+$ git checkout
+```
+
+### 列出将要清除的未追踪文件
+
+```
+$ git clean -n
+```
+
+### 清除未追踪文件
+
+```
+$ git clean -f
+```
+
+### 清除忽略文件
+
+```
+$ git clean -Xf
+```
+
+### 清除未追踪目录及文件
+
+```
+$ git clean -df
+```
+
+{% endnote %}
+
+
+{% note info %}
+
+## 回退版本
+
+### 重置暂存区
+
+```
+$ git reset
+```
+
+### 重置工作区和暂存区
+
+```
+$ git reset --hard
+```
+
+### 恢复本分支到某次提交，重置工作区与暂存区
+
+```
+$ git reset --hard <commit-ish>
+```
+
+### 恢复本分支到某次提交
+
+```
+$ git reset --soft <commit-ish>
+```
+
+### 恢复本分支到某次提交，重置暂存区
+
+```
+$ git reset --mixed <commit-ish>
+```
+
+### 反向恢复一个提交并生成新的提交
+
+```
+$ git revert <commit>
+```
+
+{% endnote %}
+
+{% note info %}
+
+## 分支
+
+### 列出本地分支
+
+```
+$ git branch
+```
+
+{% endnote %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
